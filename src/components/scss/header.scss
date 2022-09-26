@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    div {
+      margin-right: 80px;
+      background-color: #fff;
+      width: 30px;
+      height: 60px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    h5 {
+      padding: 20px;
+      background-color: #fff;
+      width: 175px;
+      height: 60px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      white-space: nowrap;
+    }
+  }
