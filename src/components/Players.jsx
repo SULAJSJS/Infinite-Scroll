@@ -32,10 +32,10 @@ const Players = () => {
             <p className="player-age">{pl.age}</p>
             <div className="rating">
               <div className="stars">
-                <AiFillStar style={{ width: '22px', height: '22px' }} />
-                <AiFillStar style={{ width: '22px', height: '22px' }} />
-                <AiFillStar style={{ width: '22px', height: '22px' }} />
-                <AiFillStar style={{ width: '22px', height: '22px' }} />
+                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
+                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
+                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
+                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
                 <AiOutlineStar style={{ width: '22px', height: '22px' }} />
               </div>
               <g>{pl.star}</g>
