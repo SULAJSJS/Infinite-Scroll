@@ -10,33 +10,29 @@ const Players = () => {
   let [offset, setOffset] = useState(0);
   const [limit, setLimit] = useState(6);
   const dispatch = useDispatch();
-    console.log(data);
+  console.log(data);
   React.useEffect(() => {
     dispatch(fetchPlayers(offset, limit));
   }, [offset, limit]);
 
   return (
     <div className="players">
-      <InfiniteScroll
-        dataLength={data?.length}
-        next={() => setOffset((offset + 10))}
-        hasMore={true}
-        >
-        {data?.map((pl) => (
-          <div className="players-items" key={pl.id}>
+      <InfiniteScroll className='scroll' dataLength={data?.length} next={() => setOffset(offset + 10)} hasMore={true}>
+        {data?.map((pl, i) => (
+          <div className="players-items" key={i}>
             <div className="number">
-              <f>{pl.id}</f>
+              <f>{i + 1}</f>
             </div>
             <img src={pl.photo} alt="" />
             <p className="player-name">{pl.first_name}</p>
             <p className="player-age">{pl.age}</p>
             <div className="rating">
               <div className="stars">
-                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
-                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
-                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
-                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
-                <AiOutlineStar style={{ width: '22px', height: '22px' }} />
+                <AiOutlineStar className="star" />
+                <AiOutlineStar className="star" />
+                <AiOutlineStar className="star" />
+                <AiOutlineStar className="star" />
+                <AiOutlineStar className="star" />
               </div>
               <g>{pl.star}</g>
             </div>

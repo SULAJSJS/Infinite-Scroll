@@ -7,16 +7,30 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: rgba(0, 82, 53, 0.2);
 }
 
 .App {
-  max-width: 1440px;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: 10px;
+  }
+  width: 100%;
+}
+
+
+@media screen and (max-width: 340px) {
+  .App {
+    width: 95%;
+  }
 }

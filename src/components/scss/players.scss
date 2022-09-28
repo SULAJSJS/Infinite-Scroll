@@ -1,51 +1,276 @@
 .players {
   margin-top: -5px;
-  .players-items {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    margin-top: 5px;
-    justify-content: center;
-    p {
-      width: 176px;
-      height: 60px;
-      background-color: #fff;
-      text-align: center;
-      padding-top: 20px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
-    }
-    .number {
-      width: 30px;
-      height: 60px;
-      background-color: #fff;
-      padding-top: 20px;
-      text-align: center;
-      font-size: 13px;
-    }
-    .rating {
-      width: 176px;
-      height: 60px;
-      padding: 10px;
-      background-color: #fff;
-      align-items: center;
-      justify-content: center;
-      .stars {
-        color: #ffc403;
-      }
-      g {
-        text-align: center;
-      }
-    }
-    img {
-      padding: 5px;
-      width: 68px;
-      height: 60px;
-    }
-    .rating {
+  width: 100%;
+  overflow-x: auto;
+  margin-left: auto;
+  .scroll {
+    .players-items {
       display: flex;
       gap: 5px;
+      align-items: center;
+      margin-top: 5px;
+      justify-content: center;
+      p {
+        width: 176px;
+        height: 60px;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .number {
+        width: 30px;
+        height: 60px;
+        background-color: #fff;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 13px;
+      }
+      .rating {
+        width: 176px;
+        height: 60px;
+        padding: 10px;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        .stars {
+          color: #ffc403;
+          .star {
+            width: 22px;
+            height: 22px;
+          }
+        }
+        g {
+          text-align: center;
+        }
+      }
+      img {
+        padding: 5px;
+        width: 68px;
+        height: 60px;
+      }
+      .rating {
+        display: flex;
+        gap: 5px;
+      }
     }
   }
 }
+
+@media screen and (max-width: 1218px) {
+  .players {
+    .scroll {
+      .players-items {
+        p {
+          width: 136px;
+          height: 60px;
+          background-color: #fff;
+          text-align: center;
+          padding-top: 20px;
+          font-size: 12px;
+        }
+        .number {
+          width: 20px;
+          height: 60px;
+          background-color: #fff;
+          padding-top: 20px;
+          text-align: center;
+          font-size: 13px;
+        }
+        .rating {
+          width: 136px;
+          height: 60px;
+          padding: 20px;
+          background-color: #fff;
+          align-items: center;
+          justify-content: center;
+          .stars {
+            color: #ffc403;
+            .star {
+              width: 16px;
+              height: 18px;
+            }
+          }
+          g {
+            text-align: center;
+          }
+        }
+        img {
+          padding: 5px;
+          width: 58px;
+          height: 60px;
+        }
+        .rating {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 946px) {
+  .players {
+    .scroll {
+      .players-items {
+        p {
+          width: 100px;
+          height: 50px;
+          background-color: #fff;
+          text-align: center;
+          padding-top: 14px;
+          font-size: 11px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .number {
+          width: 20px;
+          height: 50px;
+          background-color: #fff;
+          padding-top: 15px;
+          text-align: center;
+          font-size: 12px;
+        }
+        .rating {
+          width: 100px;
+          height: 50px;
+          padding: 10px;
+          background-color: #fff;
+          align-items: center;
+          justify-content: center;
+          .stars {
+            color: #ffc403;
+            .star {
+              width: 13px;
+              height: 15px;
+            }
+          }
+          g {
+            text-align: center;
+          }
+        }
+        img {
+          padding: 5px;
+          width: 48px;
+          height: 50px;
+        }
+        .rating {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 714px) {
+  .players {
+    .scroll {
+      .players-items {
+        p {
+          width: 80px;
+          height: 50px;
+          background-color: #fff;
+          text-align: center;
+          padding-top: 14px;
+          font-size: 10px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .number {
+          width: 20px;
+          height: 50px;
+          background-color: #fff;
+          padding-top: 15px;
+          text-align: center;
+          font-size: 12px;
+        }
+        .rating {
+          width: 80px;
+          height: 50px;
+          padding: 10px;
+          background-color: #fff;
+          align-items: center;
+          justify-content: center;
+          .stars {
+            color: #ffc403;
+            .star {
+              width: 13px;
+              height: 15px;
+            }
+          }
+          g {
+            text-align: center;
+            font-size: 13px;
+          }
+        }
+        img {
+          padding: 5px;
+          width: 48px;
+          height: 50px;
+        }
+        .rating {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 340px) {
+  .players {
+    min-width: 600px;
+    .scroll {
+      .players-items {
+        p {
+          width: 80px;
+          height: 50px;
+          background-color: #fff;
+          text-align: center;
+          padding-top: 14px;
+          font-size: 10px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .number {
+          width: 20px;
+          height: 50px;
+          background-color: #fff;
+          padding-top: 15px;
+          text-align: center;
+          font-size: 12px;
+        }
+        .rating {
+          width: 80px;
+          height: 50px;
+          padding: 10px;
+          background-color: #fff;
+          align-items: center;
+          justify-content: center;
+          .stars {
+            color: #ffc403;
+            .star {
+              width: 13px;
+              height: 15px;
+            }
+          }
+          g {
+            text-align: center;
+            font-size: 13px;
+          }
+        }
+        img {
+          padding: 5px;
+          width: 48px;
+          height: 50px;
+        }
+        .rating {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
